@@ -1,0 +1,19 @@
+<div ng-controller="dingdan_manger">
+    <header>
+        <ul class="list">
+            <li><a ui-sref="dingdan_manger.dingdan_manger"><i class="fa fa-angle-left"></i></a></li>
+            <li>商品管理</li>
+            <li><i class="fa fa-dashboard"></i></li>
+        </ul>
+    </header>
+    <section>
+        <ul class="dingdan_manger_nav">
+            <li><a ui-sref="dingdan_manger.dingdan_manger">全部</a></li>
+            <li><a ui-sref="dingdan_manger.center">卖家报价</a></li>
+            <li><a ui-sref="dingdan_manger.details">待付款<i style="color: #ff0000">(1)</i></a></li>
+            <li><a ui-sref="dingdan_manger.publish">待发货</a></li>
+            <li><a ui-sref="dingdan_manger.orderForm">交易成功</a></li>
+        </ul>
+       <ui-view></ui-view>
+    </section>
+</div>

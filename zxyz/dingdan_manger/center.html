@@ -1,0 +1,31 @@
+<div ng-controller="center">
+    <section>
+        <div class="top">
+            <p class="center_title" ng-repeat="i in top">{{i.p_title}}</p>
+            <dl ng-repeat="i in top" class="dl">
+                <dt>
+                    <img ng-src="{{i.images}}" alt="">
+                </dt>
+                <dd>
+                    <h3 class="h33">{{i.title}}</h3>
+                    <p class="p">{{i.main}}</p>
+                    <span class="sppp">{{i.right}}</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="bottom">
+            <p class="center_title" ng-repeat="i in bottom">{{i.p_title}}</p>
+            <dl ng-repeat="i in bottom" class="dl" style="border-bottom: 1px solid #CCCCCC;">
+                <dt>
+                    <img ng-src="{{i.images}}" alt="">
+                </dt>
+                <dd>
+                    <h3 class="h33">{{i.title}}</h3>
+                    <p class="p">{{i.main}}</p>
+                    <span class="sppp">{{i.right}}</span>
+                </dd>
+            </dl>
+        </div>
+    </section>
+</div>
+

@@ -1,0 +1,81 @@
+body {
+  background: #f4f4f4; }
+
+header {
+  width: 100%;
+  height: 40px;
+  background: #00b3ff; }
+  header .list {
+    width: 94%;
+    color: #ffffff;
+    margin: 0 auto;
+    display: -webkit-flex;
+    justify-content: space-between;
+    line-height: 40px;
+    font-size: 16px; }
+
+section {
+  width: 100%; }
+  section .dingdan_manger_nav {
+    width: 100%;
+    height: 38px;
+    border-bottom: 1px solid #dddddd;
+    display: -webkit-flex;
+    background: #ffffff; }
+    section .dingdan_manger_nav li {
+      flex: 1;
+      line-height: 38px;
+      text-align: center;
+      border-right: 1px solid #CCCCCC;
+      font-size: 10px; }
+      section .dingdan_manger_nav li a {
+        display: inline-block;
+        height: 38px; }
+      section .dingdan_manger_nav li a:hover {
+        color: red;
+        border-bottom: 1px solid #ff0000; }
+  section .dingdan_manger_main {
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    background: #ffffff;
+    padding: 0 3%; }
+    section .dingdan_manger_main .dingdan_manger_list {
+      width: 100%;
+      height: 25px;
+      display: -webkit-flex;
+      justify-content: space-between; }
+      section .dingdan_manger_main .dingdan_manger_list li {
+        font-size: 10px;
+        line-height: 25px; }
+    section .dingdan_manger_main .dingdan_manger_p {
+      width: 100%;
+      height: 25px;
+      float: right; }
+    section .dingdan_manger_main .dingdan_manger_dl {
+      background: #f4ebeb;
+      height: 80px;
+      padding-left: 3%;
+      display: -webkit-flex;
+      position: relative; }
+      section .dingdan_manger_main .dingdan_manger_dl dt img {
+        width: 51px;
+        height: 51px;
+        margin-top: 8px; }
+      section .dingdan_manger_main .dingdan_manger_dl dd {
+        margin-left: 12px;
+        margin-top: 8px; }
+        section .dingdan_manger_main .dingdan_manger_dl dd .manger_h4 {
+          font-size: 14px; }
+        section .dingdan_manger_main .dingdan_manger_dl dd .manger_p, section .dingdan_manger_main .dingdan_manger_dl dd .manger_pp {
+          font-size: 12px;
+          color: #999999;
+          margin-top: 2px; }
+        section .dingdan_manger_main .dingdan_manger_dl dd .manger_sp {
+          position: absolute;
+          right: 3%;
+          top: 26px;
+          font-size: 14px;
+          color: #999999; }
+
+/*# sourceMappingURL=dingdan_manger.css.map */

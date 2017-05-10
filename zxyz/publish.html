@@ -1,0 +1,39 @@
+<div ng-controller="publish">
+    <header>
+        <ul class="list">
+            <li><a ui-sref="Administration"><i class="fa fa-angle-left"></i></a></li>
+            <li>发布商品</li>
+        </ul>
+    </header>
+    <section>
+        <div class="pic">
+            <div class="im">
+                <span class="sp">x</span>
+                <img src="images/publish_1.gif", alt="">
+                <span class="sp">x</span>
+                <img src="images/publish_2.gif", alt="">
+                <span class="sp">x</span>
+                <img src="images/publish_1.gif", alt="">
+                <div class="add" img-click><b>+</b></div>
+                <i></i>
+            </div>
+        </div>
+        <ul class="bu">
+            <li ng-repeat="i in Administration">{{i.title}}<span>{{i.name}}</span></li>
+        </ul>
+    </section>
+    <div class="meng">
+        <div class="picc">
+            <img src="images/glass_1.gif" meng-img-click>
+            <img src="images/2.jpg" meng-img-click>
+            <img src="images/center_2.gif" meng-img-click>
+            <img src="images/center_1.gif" meng-img-click>
+            <img src="images/center_3.gif" meng-img-click>
+            <img src="images/glass_1.gif" meng-img-click>
+            <img src="images/center_2.gif" meng-img-click>
+            <img src="images/publish_2.gif" meng-img-click>
+            <img src="images/2.jpg" meng-img-click>
+        </div>
+    </div>
+</div>
+

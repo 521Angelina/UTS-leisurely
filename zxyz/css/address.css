@@ -1,0 +1,16 @@
+body {
+  background: #CCCCCC; }
+
+.address {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 48px; }
+  .address li {
+    width: 100%;
+    line-height: 24px;
+    background: lightgreen;
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=address.css.map */

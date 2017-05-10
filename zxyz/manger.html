@@ -1,0 +1,30 @@
+
+<div ng-controller="orderForm">
+    <header>
+        <ul class="list">
+            <li><a ui-sref="manger.manger"><i class="fa fa-angle-left"></i></a></li>
+            <li>商品管理</li>
+            <li><i class="fa fa-circle-o-notch"></i></li>
+        </ul>
+    </header>
+   <section>
+        <ul class="manger_nav">
+            <li><a ui-sref="manger.manger">出售中<i style="color: #ff0000">(3)</i></a></li>
+            <li><a ui-sref="manger.dingdan_manger">下架</a></li>
+            <li><a ui-sref="manger.publish">已送拍</a></li>
+        </ul>
+
+        <!-- <div class="manger_main">
+            <dl ng-repeat="i in glass" class="manger_dl">
+                <dt><img src="{{i.images}}" alt=""></dt>
+                <dd>
+                    <h4 class="manger_h4">{{i.title}}</h4>
+                    <p class="manger_p">{{i.price}}</p>
+                    <p class="manger_pp">{{i.main}}      {{i.ku}}</p>
+                    <span class="manger_sp">{{i.righ}}</span>
+                </dd>
+            </dl>
+        </div>-->
+       <ui-view></ui-view>
+    </section>
+</div>

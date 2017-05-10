@@ -1,0 +1,17 @@
+<div ng-controller="checkWork">
+    <header>
+        <ul class="list">
+            <li><a ui-sref="Administration"><i class="fa fa-angle-left"></i></a></li>
+            <li>考勤记录</li>
+        </ul>
+    </header>
+    <section>
+        <div class="banner">
+            <div class="img1"><img ng-src="images/glass_1.gif" alt="" class="img2"></div>
+            <p class="feng">亿珍阁珠宝</p>
+        </div>
+        <ul class="buu">
+            <li ng-repeat="i in Administration">{{i.title}}<span ng-click="change($event)" change-normal>{{i.name}}</span></li>
+        </ul>
+    </section>
+</div>

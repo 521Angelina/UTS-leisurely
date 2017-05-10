@@ -1,0 +1,22 @@
+
+<div ng-controller="details">
+    <header>
+        <ul class="list">
+            <li><a ui-sref="Administration"><i class="fa fa-angle-left"></i></a></li>
+            <li>商品详情</li>
+            <li>编辑</li>
+        </ul>
+    </header>
+    <section>
+        <div class="pic">
+            <div class="im">
+                <img ng-src="images/glass_1.gif", alt="" ui-sref="checkWork">
+                <p class="details_p">玻璃种观音</p>
+            </div>
+        </div>
+        <ul class="bu">
+            <li ng-repeat="i in glass">{{i.title}}<span>{{i.name}}</span></li>
+        </ul>
+    </section>
+
+</div>

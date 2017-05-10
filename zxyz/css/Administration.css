@@ -1,0 +1,98 @@
+body {
+  background: #f4f4f4; }
+
+header {
+  width: 100%;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #00b3ff;
+  color: #ffffff;
+  z-index: 999; }
+  header h1 {
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px; }
+
+section {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35px; }
+  section .swiper-container {
+    width: 100%;
+    height: 150px; }
+    section .swiper-container .swiper-slide {
+      width: 100%;
+      height: 100%; }
+      section .swiper-container .swiper-slide img {
+        width: 100%;
+        height: auto; }
+  section .nav {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff; }
+    section .nav .list {
+      display: -webkit-flex;
+      justify-content: space-around; }
+      section .nav .list li {
+        text-align: center;
+        padding-right: 28px;
+        margin-top: 6px; }
+        section .nav .list li .p_title {
+          color: #CCCCCC;
+          font-size: 10px; }
+        section .nav .list li p {
+          font-size: 12px; }
+      section .nav .list li:nth-child(1) {
+        border-right: 1px solid #CCCCCC; }
+      section .nav .list li:nth-child(2) {
+        border-right: 1px solid #CCCCCC; }
+  section .main {
+    width: 100%;
+    height: 160px;
+    border-top: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    margin-top: 6px; }
+    section .main dl {
+      width: 25%;
+      height: 64px;
+      border-bottom: 1px solid #CCCCCC;
+      float: right;
+      text-align: center;
+      margin-top: 16px; }
+      section .main dl dd {
+        font-size: 12px;
+        margin-top: 15px; }
+      section .main dl dt img {
+        width: 24px;
+        height: 25px; }
+
+.footer {
+  width: 100%;
+  height: 48px;
+  border-top: 1px solid #CCCCCC;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFFFFF;
+  display: -webkit-flex;
+  justify-content: space-around; }
+  .footer li {
+    text-align: center;
+    list-style: none;
+    margin-top: 8px;
+    color: #999999; }
+  .footer .on {
+    color: #25befe; }
+    .footer .on .fa {
+      font-size: 16px; }
+    .footer .on p {
+      font-size: 10px; }
+
+/*# sourceMappingURL=Administration.css.map */

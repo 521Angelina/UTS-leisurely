@@ -1,0 +1,52 @@
+body {
+  background: #f4f4f4; }
+
+header {
+  width: 100%;
+  height: 40px;
+  background: #00b3ff;
+  position: relative; }
+  header .list {
+    width: 94%;
+    color: #ffffff;
+    margin: 0 auto;
+    display: -webkit-flex;
+    line-height: 40px;
+    font-size: 16px; }
+    header .list li:nth-child(2) {
+      position: absolute;
+      left: 43%; }
+
+section {
+  width: 100%; }
+  section .banner {
+    width: 100%;
+    height: 115px; }
+    section .banner .img1 {
+      width: 61px;
+      height: 61px;
+      margin: 0 auto;
+      margin-top: 20px; }
+      section .banner .img1 .img2 {
+        width: 61px;
+        height: 61px;
+        border-radius: 50%; }
+    section .banner .feng {
+      text-align: center;
+      margin-top: 8px; }
+  section .buu {
+    width: 100%; }
+    section .buu li {
+      height: 37px;
+      line-height: 37px;
+      background: #ffffff;
+      border-bottom: 1px solid #CCCCCC;
+      font-size: 12px;
+      padding-left: 3%;
+      padding-right: 3%; }
+      section .buu li span {
+        float: right; }
+    section .buu .re {
+      color: red; }
+
+/*# sourceMappingURL=checkWork.css.map */

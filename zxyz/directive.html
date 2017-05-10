@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+.directive('customTags',function(){
+    return {
+        restrict : 'ECAM',
+        template : '<div>{{user.name}}</div>',
+        replace : true,
+        compile:function(tElement,tAttrs,transclude){
+            // 1.编译阶段...主要可以进行DOM 结构的操作
+            //  tElement.append(angular.element('<div>{{user.name}}{{user.count}}</div>'));
+             console.log('customTags compile 编译阶段...');
+            return {
+                //2.Link 包括 pre 和  post 主要可以用在添加事件的绑定和scope绑定
+
+                // 2.1.1表示在编译阶段之后，指令连接到子元素之前运行
+                pre:function preLink(scope,iElement,iAttrs,controller){
+                    console.log('customTags preLink..')
+                },
+                // 2.1.2表示在所有子元素指令都连接之后才运行
+                post:function postLink(scope,iElement,iAttrs,controller){
+                    iElement.on('click',function(){
+                        //需要用 $apply触发一次 脏检查
+                        scope.$apply(function(){
+                        scope.user.name = 'click after';
+                        scope.user.count = ++i;
+                    });
+                })
+
+                console.log('customTags all child directive link..')
+            }
+        }
+
+            // 也可以直接返回 postLink
+            // return function postction(scope,iElement,iAttrs,controller){
+            //     console.log('compile return fun');
+            // }
+    },
+        // 此link表示的就是 postLink
+        // link:function postction(scope,iElement,iAttrs,controller){
+        //    iElement.on('click',function(){
+        //        scope.$apply(function(){
+        //            scope.user.name = 'click after';
+        //            scope.user.count = ++i;
+        //            // 进行一次 脏检查
+        //        });
+        //    })
+        // }
+    }
+})
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  background: #f4f4f4; }
+
+header {
+  width: 100%;
+  height: 40px;
+  background: #00b3ff; }
+  header .list {
+    width: 94%;
+    color: #ffffff;
+    margin: 0 auto;
+    display: -webkit-flex;
+    justify-content: space-between;
+    line-height: 40px;
+    font-size: 16px; }
+    header .list a {
+      color: #ffffff; }
+
+section {
+  width: 100%; }
+  section .success {
+    padding-left: 3%;
+    height: 92px;
+    background: #3b3434;
+    color: #ffffff; }
+    section .success h3 {
+      line-height: 25px;
+      font-size: 12px; }
+    section .success p {
+      font-size: 6px; }
+  section .buy {
+    width: 100%;
+    margin-top: 10px;
+    background: #ffffff;
+    font-size: 8px; }
+    section .buy li {
+      height: 42px;
+      border-bottom: 1px solid #CCCCCC;
+      width: 94%;
+      margin: 0 auto; }
+      section .buy li .grey {
+        color: #8c8c8c; }
+      section .buy li .fa {
+        color: #c0c0c0; }
+  section .dll {
+    background: #f4ebeb;
+    margin-top: 10px;
+    height: 81px;
+    position: relative; }
+    section .dll .quan {
+      width: 94%;
+      margin: 0 auto;
+      display: -webkit-flex; }
+      section .dll .quan img {
+        width: 61px;
+        height: 61px;
+        margin-top: 10px; }
+      section .dll .quan dd {
+        color: #8c8c8c;
+        margin-top: 10px; }
+        section .dll .quan dd .pp {
+          margin-left: 10px; }
+        section .dll .quan dd .sp {
+          position: absolute;
+          right: 10px;
+          top: 10px; }
+        section .dll .quan dd .spp {
+          position: absolute;
+          right: 10px;
+          top: 40px; }
+  section .count {
+    width: 100%;
+    height: 25px;
+    background: #ffffff;
+    line-height: 25px;
+    color: #8c8c8c; }
+    section .count span {
+      float: right; }
+
+/*# sourceMappingURL=orderForm.css.map */

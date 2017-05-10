@@ -1,0 +1,19 @@
+<div>
+    <div class="dingdan_manger_main" ng-repeat="i in dingdan_manger" >
+        <ul class="dingdan_manger_list">
+            <li>{{i.shu}}</li>
+            <li>{{i.ding}}</li>
+            <li>{{i.fai}}</li>
+        </ul>
+        <dl class="dingdan_manger_dl">
+            <dt><img ng-src="{{i.images}}" alt=""></dt>
+            <dd>
+                <h4 class="manger_h4">{{i.title}}</h4>
+                <p class="manger_p">{{i.price}}</p>
+                <p class="manger_pp">{{i.main}}      {{i.ku}}</p>
+                <span class="manger_sp">{{i.righ}}</span>
+            </dd>
+        </dl>
+        <p class="dingdan_manger_p">{{i.gong}}     {{i.price}}</p>
+    </div>
+</div>

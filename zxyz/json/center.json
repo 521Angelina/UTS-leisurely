@@ -1,0 +1,33 @@
+{
+    "huo": [
+        {
+            "p_title": "活动管理",
+            "images": "images/center_1.gif",
+            "title": "天天特价",
+            "main": "特价商品每日更新",
+            "right":">"
+
+        }
+    ],
+    "ying": [
+        {
+            "p_title": "营销活动",
+            "images": "images/center_1.gif",
+            "title": "批发",
+            "main": "薄利多销",
+            "right":">"
+        },
+        {
+            "images": "images/center_2.gif",
+            "title": "诚招代理",
+            "main": "为您招兵买马",
+            "right":">"
+        },
+        {
+            "images": "images/center_3.gif",
+            "title": "一元杀",
+            "main": "买家限时抢购设置的一元商品",
+            "right":">"
+        }
+    ]
+}

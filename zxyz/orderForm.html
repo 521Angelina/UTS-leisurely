@@ -1,0 +1,42 @@
+<div ng-controller="orderForm">
+    <header>
+        <ul class="list">
+            <li><a ui-sref="Administration"><i class="fa fa-angle-left"></i></a></li>
+            <li>订单详情</li>
+            <li><i class="fa fa-circle-o-notch"></i></li>
+        </ul>
+    </header>
+    <section>
+        <div class="success" ng-repeat="i in Administration" >
+            <h3>{{i.title}}</h3>
+            <p>{{i.hao}}</p>
+            <p>{{i.createTime}}</p>
+            <p>{{i.payTime}}</p>
+            <p>{{i.sendTime}}</p>
+            <p>{{i.fruitTime}}</p>
+        </div>
+        <ul class="buy">
+            <li >
+                <p ng-repeat="i in Administration"><i class="fa fa-user" ></i>   {{i.people}} {{i.name}}</p>
+                <p class="grey" ng-repeat="i in Administration">{{i.remarks}}{{i.none}}</p>
+            </li>
+            <li>
+                <p ng-repeat="i in Administration"><i class="fa fa-address-book"></i>   {{i.addressee}} {{i.nam}}</p>
+                <p class="grey dizhi" ng-repeat="i in Administration" ui-sref="orderForm_into">{{i.adress}}{{adr}}</p>
+            </li>
+        </ul>
+        <div class="dll">
+            <dl class="quan" ng-repeat="i in Administration">
+                <dt ui-sref="publish"><img ng-src="{{i.images}}" alt=""></dt>
+                <dd>
+                    <p class="pp">{{i.img_title}}<span style="color: #000000" class="sp">￥{{i.price}}</span></p>
+                    <span class="spp">x{{i.unitPrice}}</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="count" ng-repeat="i in Administration">
+            <span>实收款:<span style="color: #000000;">￥66.00</span>(含邮费￥10.00)</span>
+            <span>共{{i.unitPrice}}件商品</span>
+        </div>
+    </section>
+</div>

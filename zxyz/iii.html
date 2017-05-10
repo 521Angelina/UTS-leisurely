@@ -1,0 +1,37 @@
+<div>
+    <header>
+        <h1>店铺管理</h1>
+    </header>
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img ng-src="images/shang_banner.gif" alt=""></div>
+                <div class="swiper-slide"><img ng-src="images/shang_banner.gif" alt=""></div>
+                <div class="swiper-slide"><img ng-src="images/shang_banner.gif" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="list">
+                <li>
+                    <p class="p_title">今日成交总额</p>
+                    <p>￥<span class="count">14126.0</span></p>
+                </li>
+                <li>
+                    <p class="p_title">今日访客</p>
+                    <p><span add-click>16</span></p>
+                </li>
+                <li>
+                    <p class="p_title">今日订单</p>
+                    <p><span add-click>29</span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <dl ng-repeat="i in Administration">
+                <dt><a ui-sref="{{i.paths}}"><img ng-src="{{i.images}}" alt=""></a></dt>
+                <dd>{{i.title}}</dd>
+            </dl>
+        </div>
+    </section>
+
+</div>
